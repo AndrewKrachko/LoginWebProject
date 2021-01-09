@@ -1,0 +1,23 @@
+﻿@page
+@model LoginWebProject.Pages.PrivatePageModel
+@{
+}
+<h1>Hello, boy!</h1>
+<div>
+    @{
+        var array = string.Empty;
+        @foreach (var value in Model.Array)
+        {
+            array += $"{value} ";
+        }
+    }
+    <p>Числа @array</p>
+</div>
+
+<div>
+    <p>Наименьшее @Model.MinInt</p>
+</div>
+
+<div>
+    <p>Наибольшее @Model.MaxInt</p>
+</div>
